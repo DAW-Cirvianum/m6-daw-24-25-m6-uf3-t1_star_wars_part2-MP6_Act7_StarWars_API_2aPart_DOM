@@ -1,0 +1,42 @@
+{
+  "name": "swapi-vanillajs",
+  "version": "1.0.0",
+  "description": "Vamos allá!",
+  "type": "module",
+  "main": "src/index.html",
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    }
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 1%",
+    "not dead"
+  ],
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "format": "prettier --write \"src/**/*.js\"",
+    "lint": "eslint \"src/**/*.js\" --quiet",
+    "test": "jest --passWithNoTests",
+    "tdd": "jest --watchAll"
+  },
+  "author": "Pablo - pablo.ros@cirivanum.cat",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.23.2",
+    "@babel/preset-env": "^7.23.2",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/user-event": "^13.2.1",
+    "babel-jest": "^27.5.1",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "jest": "^29.7.0",
+    "parcel": "^2.0.0",
+    "prettier": "^2.4.1"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}
